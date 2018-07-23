@@ -4,6 +4,20 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FiraSans-Black.ttf</string>
+		<string>FiraSans-BlackItalic.ttf</string>
+		<string>FiraSans-Bold.ttf</string>
+		<string>FiraSans-BoldItalic.ttf</string>
+		<string>FiraSans-ExtraBold.ttf</string>
+		<string>FiraSans-ExtraBoldItalic.ttf</string>
+		<string>FiraSans-ExtraLight.ttf</string>
+		<string>FiraSans-ExtraLightItalic.ttf</string>
+		<string>FiraSans-Medium.ttf</string>
+		<string>FiraSans-MediumItalic.ttf</string>
+		<string>FiraSans-Regular.ttf</string>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

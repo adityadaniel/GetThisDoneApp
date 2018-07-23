@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         // Setup app title
         appTitle.centerXAnchor.constraint(equalTo: initialBackgroundCard.centerXAnchor).isActive = true
         appTitle.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        appTitle.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        appTitle.widthAnchor.constraint(equalTo: initialBackgroundCard.widthAnchor).isActive = true
         appTitle.topAnchor.constraint(equalTo: initialBackgroundCard.topAnchor, constant: 20).isActive = true
     
     }

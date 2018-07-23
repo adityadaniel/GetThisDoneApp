@@ -18,7 +18,7 @@ class GTDALabel: UILabel {
         self.text = title
         self.textColor = color
         self.textAlignment = alignText
-        self.font = UIFont.systemFont(ofSize: size)
+        self.font = UIFont(name: "FiraSans-Black", size: size)
     }
     
     required init?(coder aDecoder: NSCoder) {
