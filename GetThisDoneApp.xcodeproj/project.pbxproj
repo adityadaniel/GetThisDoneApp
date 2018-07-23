@@ -11,6 +11,8 @@
 		11DE38142105D54300003851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE38132105D54300003851 /* ViewController.swift */; };
 		11DE38192105D54500003851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DE38182105D54500003851 /* Assets.xcassets */; };
 		11DE381C2105D54500003851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11DE381A2105D54500003851 /* LaunchScreen.storyboard */; };
+		11DE38252105E23700003851 /* GTDAGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE38242105E23700003851 /* GTDAGradient.swift */; };
+		11DE38282105EBFD00003851 /* GTDALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE38272105EBFD00003851 /* GTDALabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		11DE381B2105D54500003851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11DE381D2105D54500003851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11DE38232105D64B00003851 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		11DE38242105E23700003851 /* GTDAGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTDAGradient.swift; sourceTree = "<group>"; };
+		11DE38272105EBFD00003851 /* GTDALabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTDALabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,18 @@
 				11DE38182105D54500003851 /* Assets.xcassets */,
 				11DE381A2105D54500003851 /* LaunchScreen.storyboard */,
 				11DE381D2105D54500003851 /* Info.plist */,
+				11DE38262105EBE200003851 /* CustomUI */,
 			);
 			path = GetThisDoneApp;
+			sourceTree = "<group>";
+		};
+		11DE38262105EBE200003851 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				11DE38242105E23700003851 /* GTDAGradient.swift */,
+				11DE38272105EBFD00003851 /* GTDALabel.swift */,
+			);
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11DE38142105D54300003851 /* ViewController.swift in Sources */,
+				11DE38252105E23700003851 /* GTDAGradient.swift in Sources */,
+				11DE38282105EBFD00003851 /* GTDALabel.swift in Sources */,
 				11DE38122105D54300003851 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
