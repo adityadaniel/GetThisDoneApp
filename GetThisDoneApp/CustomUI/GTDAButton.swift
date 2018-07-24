@@ -23,6 +23,12 @@ class GTDAButton: UIButton {
             self.translatesAutoresizingMaskIntoConstraints = false
         }
         
+        if let titleLabelButton = self.titleLabel?.text {
+            self.setTitle(titleLabelButton, for: .normal)
+            self.titleLabel?.font = UIFont(name: "FiraSans-Medium", size: 16)
+        }
+        self.backgroundColor = .white
+        self.layer.cornerRadius = 12
         
     }
     
