@@ -15,7 +15,7 @@ class GTDAButton: UIButton {
     init(title: String = "default titlelabel", frame: CGRect = .zero) {
         super.init(frame: frame)
         self.title = title
-        nextSetup()
+        self.nextSetup()
     }
     
     func nextSetup() {
@@ -23,13 +23,13 @@ class GTDAButton: UIButton {
             self.translatesAutoresizingMaskIntoConstraints = false
         }
         
-        if let titleLabelButton = self.titleLabel?.text {
+        if let titleLabelButton = self.title {
             self.setTitle(titleLabelButton, for: .normal)
             self.titleLabel?.font = UIFont(name: "FiraSans-Medium", size: 16)
         }
         self.backgroundColor = .white
         self.layer.cornerRadius = 12
-        
+        self.setTitleColor(.black, for: .normal)
     }
     
     required init?(coder aDecoder: NSCoder) {

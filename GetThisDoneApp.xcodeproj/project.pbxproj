@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		118D6B262112F8DC00089B4F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D6B252112F8DC00089B4F /* ListViewController.swift */; };
+		118D6B282112F9DE00089B4F /* GTDAHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D6B272112F9DE00089B4F /* GTDAHeaderView.swift */; };
 		11DE38122105D54300003851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE38112105D54300003851 /* AppDelegate.swift */; };
 		11DE38142105D54300003851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE38132105D54300003851 /* ViewController.swift */; };
 		11DE38192105D54500003851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DE38182105D54500003851 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		118D6B252112F8DC00089B4F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		118D6B272112F9DE00089B4F /* GTDAHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTDAHeaderView.swift; sourceTree = "<group>"; };
 		11DE380E2105D54300003851 /* GetThisDoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetThisDoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DE38112105D54300003851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11DE38132105D54300003851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				11DE38262105EBE200003851 /* CustomUI */,
 				11DE38112105D54300003851 /* AppDelegate.swift */,
 				11DE38132105D54300003851 /* ViewController.swift */,
+				118D6B252112F8DC00089B4F /* ListViewController.swift */,
 				11DE38182105D54500003851 /* Assets.xcassets */,
 				11DE381A2105D54500003851 /* LaunchScreen.storyboard */,
 				11DE381D2105D54500003851 /* Info.plist */,
@@ -113,6 +118,7 @@
 				11DE38242105E23700003851 /* GTDAGradient.swift */,
 				11DE38272105EBFD00003851 /* GTDALabel.swift */,
 				11DE384E210607C900003851 /* GTDAButton.swift */,
+				118D6B272112F9DE00089B4F /* GTDAHeaderView.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -230,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118D6B282112F9DE00089B4F /* GTDAHeaderView.swift in Sources */,
 				11DE38142105D54300003851 /* ViewController.swift in Sources */,
 				11DE384F210607C900003851 /* GTDAButton.swift in Sources */,
+				118D6B262112F8DC00089B4F /* ListViewController.swift in Sources */,
 				11DE38252105E23700003851 /* GTDAGradient.swift in Sources */,
 				11DE38282105EBFD00003851 /* GTDALabel.swift in Sources */,
 				11DE38122105D54300003851 /* AppDelegate.swift in Sources */,

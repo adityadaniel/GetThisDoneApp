@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     let copyrightLabel = GTDALabel(title: "By Aditya Daniel", color: .gray, size: 16, frame: .zero, alignText: .center)
     
     let nextButton = GTDAButton(title: "Start Winning", frame: .zero)
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,9 +39,23 @@ class ViewController: UIViewController {
         initialBackgroundCard.addSubview(copyrightLabel)
         initialBackgroundCard.addSubview(nextButton)
         
+        // handle nextbutton when tapped
+        nextButton.addTarget(self, action: #selector(handleClick), for: .touchUpInside)
         
         // setup constraints of subviews
         setupConstraints()
+    }
+    
+    @objc func handleClick() {
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            self.nextButton.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        }) { (_) in
+            UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                self.nextButton.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }) { (_) in
+                self.present(ListViewController(), animated: true, completion: nil)
+            }
+        }
     }
     
     func setupConstraints() {
@@ -68,7 +83,7 @@ class ViewController: UIViewController {
         copyrightLabel.centerXAnchor.constraint(equalTo: initialBackgroundCard.centerXAnchor).isActive = true
         copyrightLabel.widthAnchor.constraint(equalTo: initialBackgroundCard.widthAnchor).isActive = true
         copyrightLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        copyrightLabel.bottomAnchor.constraint(equalTo: initialBackgroundCard.bottomAnchor, constant: 50).isActive = true
+        copyrightLabel.bottomAnchor.constraint(equalTo: initialBackgroundCard.bottomAnchor, constant: 60).isActive = true
         
         // setup nextbutton
         nextButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
